@@ -1,0 +1,60 @@
+body {
+  margin-top: 3em;
+}
+
+nav  {
+  position: absolute;
+  top: .5em;
+  right: .5em;
+}
+
+nav ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: .5em;
+  border: 1px solid black;
+  border-right: none;
+}
+
+nav li:last-of-type {
+  border-right: 1px solid black;
+}
+
+nav li:hover {
+  background: #ddd;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+}
+
+ul.photos {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+ul.photos li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+ul.photos li img {
+  max-height: 10em;
+  max-width: 20em;
+  padding: 1.5em 2em;
+  margin: -.5em 0;
+  border-radius: 2em;
+}
+
+ul.photos li img:hover {
+  background: #ffa;
+}

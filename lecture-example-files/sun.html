@@ -1,32 +1,53 @@
 <!doctype html>
 <title>Sun is Hot</title>
 <style>
-html, body { height: 100%; width: 100%; overflow: hidden; font-family: "Garamond", "Times New Roman"; font-size: 1em; }
-#poem h1 { position: absolute; left: 4.5em; width: 100%; text-align: center; top: 30%; font-weight: normal; }
-#poem h1 i { font-style: normal }
-#poem h1 i:nth-of-type(1)  {                    font-size: 2.5em; }
-#poem h1 i:nth-of-type(2)  {                    font-size: 2.6em; }
-#poem h1 i:nth-of-type(3)  {                    font-size: 2.7em; }
-#poem h1 i:nth-of-type(4)  {                    font-size: 2.8em; }
-#poem h1 i:nth-of-type(5)  {                    font-size: 2.9em; }
-#poem h1 i:nth-of-type(6)  {                    font-size: 3.0em; }
-#poem h1 i:nth-of-type(7)  {                    font-size: 3.1em; }
-#poem h1 i:nth-of-type(8)  { font-weight: bold; font-size: 3.2em; }
-#poem h1 i:nth-of-type(9)  { font-weight: bold; font-size: 3.3em; }
-#poem h1 i:nth-of-type(10) { font-weight: bold; font-size: 3.4em; }
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Garamond", "Times New Roman";
+  font-size: 1rem;
+}
 
-#poem p { font-size: 1.5em; position: absolute; width: 100%; right: 44%; right: calc(50% - 4em); top: 30%; top: calc(30% + 1em); text-align: right; }
-#poem p:nth-of-type(1)  { transform-origin: right bottom; transform: rotate(60deg) translateX(-5.5em); }
-#poem p:nth-of-type(2)  { transform-origin: right bottom; transform: rotate(45deg) translateX(-5.5em); }
-#poem p:nth-of-type(3)  { transform-origin: right bottom; transform: rotate(30deg) translateX(-5.5em); }
-#poem p:nth-of-type(4)  { transform-origin: right bottom; transform: rotate(15deg) translateX(-5.5em); }
-#poem p:nth-of-type(5)  { transform-origin: right bottom; transform: rotate(0deg)  translateX(-5.5em); }
-#poem p:nth-of-type(6)  { transform-origin: right bottom; transform: rotate(-15deg)translateX(-5.5em); }
-#poem p:nth-of-type(7)  { transform-origin: right bottom; transform: rotate(-30deg)translateX(-5.5em); }
-#poem p:nth-of-type(8)  { transform-origin: right bottom; transform: rotate(-45deg)translateX(-5.5em); }
-#poem p:nth-of-type(9)  { transform-origin: right bottom; transform: rotate(-60deg)translateX(-5.5em); }
-#poem p:nth-of-type(10) { transform-origin: right bottom; transform: rotate(-75deg)translateX(-5.5em); }
-#poem p:nth-of-type(11) { transform-origin: right bottom; transform: rotate(-90deg)translateX(-5.5em); }
+#poem header {
+  position: absolute;
+  left: 7em;
+  width: 100%;
+  text-align: center;
+  top: 25%;
+  top: calc(30% - 2.8em);
+  perspective: 10em;
+}
+
+#poem header h1 {
+  font-size: 4.7em;
+  font-style: normal;
+  font-weight: normal;
+  transform: rotateY(-14deg);
+}
+
+#poem p {
+  font-size: 1.5em;
+  position: absolute;
+  width: 100%;
+  right: calc(50% - 4em);
+  top: calc(30% + 1em);
+  text-align: right;
+  transform-origin: right center;
+}
+
+#poem p:nth-of-type(1)  { transform: rotate(50deg) translateX(-5.5em); }
+#poem p:nth-of-type(2)  { transform: rotate(36deg) translateX(-5.5em); }
+#poem p:nth-of-type(3)  { transform: rotate(22deg) translateX(-5.5em); }
+#poem p:nth-of-type(4)  { transform: rotate(8deg)  translateX(-5.5em); }
+#poem p:nth-of-type(5)  { transform: rotate(-6deg) translateX(-5.5em); }
+#poem p:nth-of-type(6)  { transform: rotate(-20deg)translateX(-5.5em); }
+#poem p:nth-of-type(7)  { transform: rotate(-34deg)translateX(-5.5em); }
+#poem p:nth-of-type(8)  { transform: rotate(-48deg)translateX(-5.5em); }
+#poem p:nth-of-type(9)  { transform: rotate(-62deg)translateX(-5.5em); }
+#poem p:nth-of-type(10) { transform: rotate(-76deg)translateX(-5.5em); }
+#poem p:nth-of-type(11) { transform: rotate(-90deg)translateX(-5.5em); }
+
 
 #attribution { position: fixed; bottom: .5em; right: .5em; }
 </style>
@@ -34,16 +55,18 @@ html, body { height: 100%; width: 100%; overflow: hidden; font-family: "Garamond
 <p id="attribution">from <a href="http://books.sorodesign.com/2009/10/12/layout-of-a-poetry-book-for-children">LAYOUT of a POETRY BOOK for CHILDREN</a></p>
 
 <section id="poem">
-<h1><i>s</i><i>u</i><i>n</i><i> </i><i>i</i><i>s</i><i> </i><i>h</i><i>o</i><i>t</i></h1>
-<p>Sun is hot;</p>
-<p>Rain is wet;</p>
-<p>Clouds are just plain dreary.</p>
-<p>Sleet feels nasty;</p>
-<p>Hail is hard;</p>
-<p>Snow is cold and bleary.</p>
-<p>Thunder's loud;</p>
-<p>Wind's a mess;</p>
-<p>Storms prohibit play.</p>
-<p>I guess I'll stay inside until</p>
-<p>This weather goes away.</p>
+  <header>
+    <h1>sun is <strong>hot</strong></h1>
+  </header>
+  <p>Sun is hot;</p>
+  <p>Rain is wet;</p>
+  <p>Clouds are just plain dreary.</p>
+  <p>Sleet feels nasty;</p>
+  <p>Hail is hard;</p>
+  <p>Snow is cold and bleary.</p>
+  <p>Thunder's loud;</p>
+  <p>Wind's a mess;</p>
+  <p>Storms prohibit play.</p>
+  <p>I guess I'll stay inside until</p>
+  <p>This weather goes away.</p>
 </section>
